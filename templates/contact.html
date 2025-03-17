@@ -1,17 +1,17 @@
 {% extends 'base.html'%}
 {% load static %}
 
-{% block content%}
+    {% block content%}
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-bg-1.jpg);">
         <div class="container-fluid page-header-inner py-5">
             <div class="container text-center">
-                <h1 class="display-3 text-white mb-3 animated slideInDown">Biz bilan bog'lanish</h1>
+                <h1 class="display-3 text-white mb-3 animated slideInDown" style="color: red !important;">Biz bilan bog'lanish</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center text-uppercase">
-                        <li class="breadcrumb-item"><a href="#">Bosh sahifa</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">Bog'lanish</li>
+                        <li class="breadcrumb-item"><a href="{% url 'index' %}">Bosh sahifa</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page" style="color: red !important;">Bog'lanish</li>
                     </ol>
                 </nav>
             </div>
